@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_723a96fb5c540a7e0c30377361be1c04 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_723a96fb5c540a7e0c30377361be1c04" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_723a96fb5c540a7e0c30377361be1c04 = L.map(
+                "map_723a96fb5c540a7e0c30377361be1c04",
+                {
+                    center: [12.9719, 77.5937],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6493eb88485aeb6453c6b19475eb077d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6493eb88485aeb6453c6b19475eb077d.addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            var marker_7d3acc92fe7d0291693f942cc1b9f09a = L.marker(
+                [12.9719, 77.5937],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            var icon_44076713595a05351a520d86a25b2349 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7d3acc92fe7d0291693f942cc1b9f09a.setIcon(icon_44076713595a05351a520d86a25b2349);
+        
+    
+            marker_7d3acc92fe7d0291693f942cc1b9f09a.bindTooltip(
+                `<div>
+                     Current Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8de6d5eb91e467aa6ec5be633157abd3 = L.marker(
+                [23.4983004, 86.0830146],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_8de6d5eb91e467aa6ec5be633157abd3.bindTooltip(
+                `<div>
+                     Sadashiva and Baba Tantra Pitha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cf11bd00558d91db220f9c17d7b65e4e = L.marker(
+                [26.7854254, 75.8226628],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_cf11bd00558d91db220f9c17d7b65e4e.bindTooltip(
+                `<div>
+                     India gate
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_442aa14f6a160ddd0ac36d68f5dd1c13 = L.marker(
+                [26.8039663, 75.6811564],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_442aa14f6a160ddd0ac36d68f5dd1c13.bindTooltip(
+                `<div>
+                     Neota Dam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_529aec506fa9c57a64d9d136c380f968 = L.marker(
+                [26.9162485, 75.8098572],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_529aec506fa9c57a64d9d136c380f968.bindTooltip(
+                `<div>
+                     Paanch Batti
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_de990ad55697c76c98e238da48e19273 = L.marker(
+                [26.9232015, 75.8243929],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_de990ad55697c76c98e238da48e19273.bindTooltip(
+                `<div>
+                     गुलाबी नगरी (पिंक सिटी)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee925d1ce495daa41361b3e88fb0b958 = L.marker(
+                [26.923932, 75.8268652],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_ee925d1ce495daa41361b3e88fb0b958.bindTooltip(
+                `<div>
+                     Hawa Mahal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d64b777edf65edadba9ec8a7f426d3c0 = L.marker(
+                [26.9238157, 75.8206609],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_d64b777edf65edadba9ec8a7f426d3c0.bindTooltip(
+                `<div>
+                     rooftop view metal staircase
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b02acfac10359eb159952c1da20093f = L.marker(
+                [26.9247389, 75.8244663],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_0b02acfac10359eb159952c1da20093f.bindTooltip(
+                `<div>
+                     जंतर मंतर, जयपुर
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_925a9c3a6dd5abb1bd962936823970f1 = L.marker(
+                [26.9255317, 75.8272703],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_925a9c3a6dd5abb1bd962936823970f1.bindTooltip(
+                `<div>
+                     Sawai Mansingh Townhall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7a0880dcd2f639b6aa4550da0a7cdfa = L.marker(
+                [26.9448268, 75.8407405],
+                {
+}
+            ).addTo(map_723a96fb5c540a7e0c30377361be1c04);
+        
+    
+            marker_d7a0880dcd2f639b6aa4550da0a7cdfa.bindTooltip(
+                `<div>
+                     Maharaniyon , Jaipur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
